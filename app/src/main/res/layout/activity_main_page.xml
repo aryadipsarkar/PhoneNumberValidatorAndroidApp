@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.arya.aryasapp.MainPageActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Arya&apos;s App"
+            android:id="@+id/textView"
+            android:layout_weight="0.06"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textIsSelectable="true"
+            android:theme="@style/Base.AlertDialog.AppCompat" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Click for the Phone Dialer Func"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="openPhoneApp"/>
+
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="Click for the Android Doc Func"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            style="?android:attr/buttonStyleSmall"
+            android:onClick="openDocApp"/>
+
+    </LinearLayout>
+</RelativeLayout>
